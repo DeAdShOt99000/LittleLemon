@@ -1,3 +1,7 @@
+Dependencies:
+
+pip install django djangorestframework djoser mysqlclient
+
 Paths:
 
 '' -> Users
