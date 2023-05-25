@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from littlelemonAPI.views import UserViewSet
+from restaurant.views import UserViewSet
 
 router = DefaultRouter()
 router.register('users', UserViewSet, basename='users')
@@ -27,5 +27,4 @@ urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('restaurant/', include('restaurant.urls')),
-    path('api/', include('littlelemonAPI.urls')),
 ]
