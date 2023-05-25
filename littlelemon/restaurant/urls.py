@@ -13,6 +13,4 @@ urlpatterns = [
     path('menu-items/<int:pk>', views.SingleMenuItemView.as_view()),
     path('message/', views.msg),
     path('api-auth-token/', obtain_auth_token),
-    path('auth/', include('djoser.urls')),
-    path('auth/', include('djoser.urls.authtoken')),
 ]
